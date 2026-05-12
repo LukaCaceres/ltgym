@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap');
+
+:root {
+    /* COLORS */
+
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #111111;
+    --bg-card: #1a1a1a;
+
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+
+    --accent-primary: #ff7a00;
+    --accent-hover: #ff9500;
+
+    --border-color: #222222;
+
+    /* TYPOGRAPHY */
+
+    --font-primary: 'Archivo', sans-serif;
+
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 3rem;
+
+    /* SPACING */
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* BORDER RADIUS */
+
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+
+    /* TRANSITIONS */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+
+    color: var(--text-primary);
+
+    font-family: var(--font-primary);
+
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* GLOBAL HELPERS */
+
+.container {
+    width: min(90%, 75rem);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 5rem 0;
+}
