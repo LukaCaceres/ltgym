@@ -1,4 +1,4 @@
-
+import '../styles/contact.css'
 
 const Contact = () => {
     return (
@@ -45,7 +45,7 @@ const Contact = () => {
                             </a>
 
                             <a
-                                href='https://instagram.com/ltgym'
+                                href='https://instagram.com'
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >
