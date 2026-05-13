@@ -59,7 +59,20 @@ html {
 }
 
 body {
-    background-color: var(--bg-primary);
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255, 122, 0, 0.10),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            rgba(255, 122, 0, 0.05),
+            transparent 25%
+        ),
+
+        var(--bg-primary);
 
     color: var(--text-primary);
 
@@ -67,7 +80,6 @@ body {
 
     line-height: 1.5;
 }
-
 img {
     max-width: 100%;
     display: block;
