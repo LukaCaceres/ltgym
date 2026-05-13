@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
+import Hero from './components/Hero'
 function App() {
  
 
   return (
     <>
-      <Navbar></Navbar>
-      <h1>Gym App</h1>
+      <Navbar />
+      <Hero />
       <Footer />
     </>
     
