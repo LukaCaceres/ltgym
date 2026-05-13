@@ -58,6 +58,8 @@
 /* CARD */
 
 .pricing-card {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,6 +90,14 @@
     position: relative;
 
     border-color: var(--accent-primary);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 122, 0, 0.06),
+            transparent
+        ),
+        var(--bg-secondary);
 }
 
 .featured-label {
@@ -179,11 +189,7 @@
 @media (min-width: 48rem) {
 
     .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .featured-card {
-        grid-column: span 2;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -198,10 +204,6 @@
     }
 
     .pricing-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .featured-card {
-        grid-column: auto;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
