@@ -1,0 +1,155 @@
+.navbar {
+    width: 100%;
+    height: 5rem;
+
+    padding: 0 var(--spacing-lg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--bg-secondary);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: var(--fs-xl);
+    font-weight: 700;
+
+    color: var(--text-primary);
+
+    cursor: pointer;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+
+    color: var(--text-primary);
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    position: absolute;
+
+    top: 5rem;
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--bg-secondary);
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height var(--transition-normal);
+}
+
+.nav-links.active {
+    max-height: 25rem;
+}
+
+.nav-links li {
+    border-top: 0.0625rem solid var(--border-color);
+}
+
+.nav-links a {
+    display: block;
+
+    padding: var(--spacing-md) var(--spacing-lg);
+
+    font-size: var(--fs-base);
+    font-weight: 500;
+
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast);
+}
+
+.nav-links a:hover {
+    background-color: var(--bg-card);
+    color: var(--accent-primary);
+}
+
+/* TABLET */
+
+@media (min-width: 48rem) {
+    .navbar {
+        padding: 0 3rem;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 64rem) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+
+        width: auto;
+
+        background: none;
+
+        flex-direction: row;
+        align-items: center;
+
+        gap: 2rem;
+
+        max-height: none;
+
+        overflow: visible;
+    }
+
+    .nav-links li {
+        border: none;
+    }
+
+    .nav-links a {
+        padding: 0;
+
+        position: relative;
+    }
+
+    .nav-links a::after {
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+        bottom: -0.3rem;
+
+        width: 0%;
+        height: 0.125rem;
+
+        background-color: var(--accent-primary);
+
+        transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+        background: none;
+        color: var(--accent-primary);
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+}
