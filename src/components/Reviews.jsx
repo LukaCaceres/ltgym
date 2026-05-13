@@ -1,4 +1,4 @@
-
+import '../styles/reviews.css'
 
 const Reviews = () => {
     return (
@@ -13,9 +13,9 @@ const Reviews = () => {
                     </span>
 
                     <h2>
-                        Resultados reales.
+                        Esfuerzos reales.
                         <br />
-                        Personas reales.
+                        Resultados reales.
                     </h2>
 
                     <p>
@@ -47,7 +47,7 @@ const Reviews = () => {
                     <article className='review-card featured-review'>
 
                         <p className='review-text'>
-                            “Probé varios gimnasios en Tucumán y este fue el único donde realmente me sentí cómodo entrenando. Muy buen equipamiento y horarios.”
+                            “Probé varios gimnasios en Tucumán y este fue el único donde realmente me sentí cómoda entrenando. Muy buen equipamiento y horarios.”
                         </p>
 
                         <div className='review-user'>
