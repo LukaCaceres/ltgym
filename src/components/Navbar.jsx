@@ -44,6 +44,12 @@ function Navbar() {
             Nosotros
           </a>
         </li>
+
+         <li>
+          <a href="#contacto" onClick={closeMenu}>
+            Contacto
+          </a>
+        </li>
       </ul>
     </nav>
   );

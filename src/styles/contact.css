@@ -1,0 +1,184 @@
+.contact-section {
+    width: 100%;
+}
+
+/* HEADER */
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    gap: 1.5rem;
+
+    margin-bottom: 4rem;
+}
+
+.contact-badge {
+    padding: 0.5rem 1rem;
+
+    border: 0.0625rem solid var(--border-color);
+    border-radius: 999px;
+
+    background-color: var(--bg-card);
+
+    color: var(--accent-primary);
+
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.contact-text h2 {
+    max-width: 10ch;
+
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.contact-text p {
+    max-width: 38rem;
+
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+}
+
+/* CONTENT */
+
+.contact-content {
+    display: grid;
+
+    gap: 1.5rem;
+}
+
+/* CARD */
+
+.contact-card,
+.contact-info {
+    padding: 2rem;
+
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-md);
+
+    background-color: var(--bg-secondary);
+}
+
+/* LEFT CARD */
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.contact-card h3 {
+    font-size: var(--fs-2xl);
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+}
+
+/* LINKS */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--bg-card);
+
+    font-weight: 700;
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.contact-links a:hover {
+    background-color: var(--accent-primary);
+
+    color: #ffffff;
+
+    transform: translateY(-0.125rem);
+}
+
+/* INFO */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.info-item span {
+    color: var(--accent-primary);
+
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.info-item p {
+    color: var(--text-secondary);
+
+    line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (min-width: 48rem) {
+
+    .contact-links {
+        flex-direction: row;
+    }
+
+    .contact-links a {
+        flex: 1;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 64rem) {
+
+    .contact-text {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .contact-content {
+        grid-template-columns: 1.2fr 0.8fr;
+
+        align-items: stretch;
+    }
+}
