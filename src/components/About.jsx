@@ -1,4 +1,4 @@
-
+import '../styles/about.css'
 
 const About = () => {
     return (
@@ -46,7 +46,7 @@ const About = () => {
                         </article>
 
                         <article className='about-stat'>
-                            <span>
+                            <span className='años-stat'>
                                 5 años
                             </span>
 
